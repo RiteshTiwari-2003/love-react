@@ -54,4 +54,21 @@ if you want to uninstall any package then you can also do like
 npm uninstall tailwindcss
 
 but when you install tailwindcss like this
-npm i tailwindcss  without dev dependencies them it go in dependencies in package.json
+npm i tailwindcss without dev dependencies them it go in dependencies in package.json
+
+# what is the node module?
+
+the node_module folder in a node.js project is a directory that contains all the libraries (dependencies) and their sub dependencies required for your project of function,these libraries are installed when you run the npm install or yarn install command.
+purpose of node module:
+
+1. dependencies storage: the folder store all the package and module you specify in the dependencies or devdependencies section of your package.json file.
+2. it also include subdependencies required by those package
+
+# how the node module work?
+
+when you run npm install;
+node package manager reads the package.json file to determine which packages are needed
+npm install those packages and their dependencies from the npm registry
+the download packages are placed in the node module
+
+
