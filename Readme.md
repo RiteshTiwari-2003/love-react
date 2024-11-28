@@ -71,4 +71,16 @@ node package manager reads the package.json file to determine which packages are
 npm install those packages and their dependencies from the npm registry
 the download packages are placed in the node module
 
+node module basically the storage of dependencies and packages and subdependencies
+like third party packages like random-number in this many code have written down that code written down into node module of all the packages and dependencies
+
+# what is react basically ?
+
+react is javascript library which soul purpose is to create user interface.
+library is what , library is basically a segment of code where vast amount of functionality provided to user 
+user's code invoked the all of that functionality whenever they needed that functionality
+
+a magical line about react is react is all about components, react is the component based architecture , then here one question is arises that what is component?
+then we simply say that components are the reusable peace of code .
+in js when we want to use same code again and again then we make function of that code but in react we make components for that code 
 
