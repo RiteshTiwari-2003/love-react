@@ -77,10 +77,65 @@ like third party packages like random-number in this many code have written down
 # what is react basically ?
 
 react is javascript library which soul purpose is to create user interface.
-library is what , library is basically a segment of code where vast amount of functionality provided to user 
+library is what , library is basically a segment of code where vast amount of functionality provided to user
 user's code invoked the all of that functionality whenever they needed that functionality
 
 a magical line about react is react is all about components, react is the component based architecture , then here one question is arises that what is component?
 then we simply say that components are the reusable peace of code .
-in js when we want to use same code again and again then we make function of that code but in react we make components for that code 
+in js when we want to use same code again and again then we make function of that code but in react we make components for that code
+component is nothing more while a function in react.
+you can assume in your mind that component create a custom html element for you, you can assume but dont tell this in interview.
+
+like when we create a website inside the website there can be many components inside the website one is header two side bar one main component and one is footer. then we simply say that we have five component inside my website.
+
+# why we need the reactjs when react is a javascript library and all thing written in the javascript then why we need react js why not we use js for everything?
+
+because normal js is based on imperetive approach whatmeans of this that suppose you want to create x thing x functinality x ui for your app. then you need to tell everything that from here fetch the body tag, and upon that create the children component in that chil create this component and attach that componet to the tag.
+
+but in react you only need to tell about end point , imperetive approach means everything done by step by step line by line
+but in react only tell about end point and give up all the thing on react for completion
+but how?
+
+and this is declarative approach that only tell about end point to react and all thing give up on the react.
+
+# what is the spa (single page application)?
+
+like we have single page of html and in that you changes all the time .
+once the that page is loaded then after that you change all time dynamically
+in single page application basically we create a html file and after that when changes occur we changes dynamically into that single html file.
+when you simply write thin in paragraph tagthis is called static value but when you fetch paragraph from api call with the help of js in paragraph tag this is called dynamically change .
+
+# react alternatives
+
+Anguler , vue
+but when you talk about framework not about library then on thing also come which is next js anguler js also framework
+
+# component
+
+when we use any code for many time then we make its component and component create custom html element of that we make custome html tag which name in example we give <Custome></Custom>
+why react?
+reusability
+dry(dont repeat yourself)
+readiability
+soc (seperation of concern)
+maintainability
+
+# create new react project
+
+step1 : install node js
+step2: vs code
+step 3: create a new folder: ReactFolio
+step 4: change directory to reactFolio
+step 5: npx create-react-app demoshopapp
+step6: change directory to demoshopapp
+step 7: npm start
+
+# way no. 2:
+Replit
+go in replit and click on create reple templete is react javascript we give title demoshopapp click on create 
+
+# way 3:
+tailwind wala starter pack 
+
+# in react in src folder what is done by index.js why we write index.js file
 
