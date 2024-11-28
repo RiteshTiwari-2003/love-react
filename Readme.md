@@ -131,11 +131,38 @@ step6: change directory to demoshopapp
 step 7: npm start
 
 # way no. 2:
+
 Replit
-go in replit and click on create reple templete is react javascript we give title demoshopapp click on create 
+go in replit and click on create reple templete is react javascript we give title demoshopapp click on create
 
 # way 3:
-tailwind wala starter pack 
+
+tailwind wala starter pack
 
 # in react in src folder what is done by index.js why we write index.js file
 
+this is the entry point of the react project, first of all we execute index.js file in react
+this is first js file which is execute in react project
+in react we import first component as app component in index.js file in reder function which is property of root which is accessed by react from
+public folder index.html file.
+
+basically first in src first index,js file run and take the root element from index.html file of public folder and make the root of react and with the help of root react rander the App component or function so after this app.js is called, then react take its root element and for showing anything on ui if we want to show anything in that root element , when we want to display something on the display we can say that thing to do rendering
+
+so in react one function present which name is basically render , but what we render in root.render function then answer is App
+in app.js component we add that code which i want to show on display
+
+# why we use className at the place of class?
+
+because in app component basically we use js (a custom html) not a html and in js class is basically a reserved keyword , so we can not use class so because of this we use className .
+so basically app component replace the index.html file div tag because react take root from div element in index.html and make its root
+and after this pass the root with render function then it call app component and app component show whichever thing you want to see on the server or on the display
+
+like in app.js and other thing in react we use language that is not proper javascript then how it is run properly because it is not js it is jsx javascriptxml(html inside javascript)
+
+and when you run the npm start it convert the user friendly code in browser understanding code like normal html and js.
+
+# other components
+
+if we want to make some other components then we can make component in src folder in components folder and we can export and import it into App.js
+and in App function we call this component but if we add <Item></Item> then it shows error because in react in any component like App we only pass the components in one global tag ont seperatly which is also called as fregments which is describe like this <></>
+we can also replace this with div tag
