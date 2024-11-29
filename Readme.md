@@ -165,4 +165,33 @@ and when you run the npm start it convert the user friendly code in browser unde
 
 if we want to make some other components then we can make component in src folder in components folder and we can export and import it into App.js
 and in App function we call this component but if we add <Item></Item> then it shows error because in react in any component like App we only pass the components in one global tag ont seperatly which is also called as fregments which is describe like this <></>
-we can also replace this with div tag
+we can also replace this with div tag.
+
+# one importent question about props property
+
+like i have one global tag in which two tag present then if in inner tags one tag have own style that color:red but also we give style to global tag that its color is green then in in inner tag whatever you write follow whcih tag property?
+and why? this is related to {props.className}
+in react how to we handle event handling then we can say props using props you can also done eventhandling and every props from which you can do event handling is start with on as like onClick
+
+if you want to change anything on ui using event or anything then we want to use state
+like we change my variable but that variable in doesnot change because of absencs of state, using state we change also ui when we update the variable, like a variable title has a value "Nirma" but i changed the cariable as "surfaxel" then react put the surfaxel inside the tilte variable and rerender all the ui,state basically when you put new value inn variable then state basically render the whole ui.
+if we want state inside my code then we must import that state like this
+import React,{useState} from "react";
+
+# what is useState ?
+
+useState is basically is the rreact hook,that allow you to add state management to functional component with useState, you can create a stATEFUL variable (a value that react keeps track of) and update it dynamically as your app interact with user or other events.
+why use useState?
+state is used to store information that change over time,such as :
+user input form
+a counter value
+data fetched from an api
+ui toggles
+before react hook,state management was only possible in class component, but with useState
+functionasl component can now manage state
+
+syntex of useState
+const [state,setState]=useState(initialvalue);
+state: the current value of the state
+setState: a function to update the state value
+initial value: the starting value of the state
