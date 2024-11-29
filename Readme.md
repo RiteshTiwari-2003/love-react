@@ -195,3 +195,11 @@ const [state,setState]=useState(initialvalue);
 state: the current value of the state
 setState: a function to update the state value
 initial value: the starting value of the state
+
+useState basically return two variable as a output like one is state and one is function which is use to update the state whenever any change occur
+like in initial point in variable title has a value "nirma" but you want to change this like this
+title = "surfaxel" then by only initializing this nothing have done but is you change value like this setState("surfaxel")
+
+meaning of thus line const[title,setTitle]=useState(props.title);
+basically in title block basically in initial time props.title stored but whenever you want to change the title value you call this function setState()
+now in ui basically a button shown which is click and whenevr we click on click button, click event basically fired.click event basically mapped with onClick props,onClick props is mapped with clickHandler function and in this function basically one syntex is written that setTitle performed
