@@ -203,3 +203,23 @@ title = "surfaxel" then by only initializing this nothing have done but is you c
 meaning of thus line const[title,setTitle]=useState(props.title);
 basically in title block basically in initial time props.title stored but whenever you want to change the title value you call this function setState()
 now in ui basically a button shown which is click and whenevr we click on click button, click event basically fired.click event basically mapped with onClick props,onClick props is mapped with clickHandler function and in this function basically one syntex is written that setTitle performed
+settitle function basically what done:
+basically go first and change the title variable value from props.title to surfexel and after this render the ui.
+
+# here some question come when you write this line that
+
+# const[title,setTitle]=usestate(initialvalue);
+
+# setTitle("surfaxel");
+
+# then when in 210 line there is const present then how you change the value from setTitle function how it is possible.
+
+if in your code any data which you want to change and also reflect it on ui then you must use state(useState)
+
+# in react this is very importent question that we can easily access give object from parents component to chid component ut how parents take or access object from child component?
+
+we all know that children access object from component using props but in reverse if parent component want or access component from child component
+then how can access it?
+so we can say that in parent basically a function define for accessing object from child component and pass that function as a props to the child component
+and child component call parents function with that object as a parameter and when child component call the function
+it goes in parents and parent easily access object from child component using this.
