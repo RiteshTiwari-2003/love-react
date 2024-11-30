@@ -223,3 +223,33 @@ then how can access it?
 so we can say that in parent basically a function define for accessing object from child component and pass that function as a props to the child component
 and child component call parents function with that object as a parameter and when child component call the function
 it goes in parents and parent easily access object from child component using this.
+
+like a super parent component A and its child component is B and b's child component is component c , and component c 's child is component component D
+like in A handler function and pass that handler function to component B and component b's handler function and inthat function call function A using props
+and also pass the handler function to c from b and in component c define the handler function call the function b inside the handler function and also pass the handler function into component d from component call
+inn component d define handler function and in this handler function call the component c dunction using props.
+
+in handle multiple state using the useState hooks in react, you can call the useState function multiple times , once for each state you want to manage
+here's is the example:
+import {useState} from 'react';
+function MyComponent(props){
+const[count,setCount]=useState(0);
+const[text,setText]=useState("");
+function handleIncrement(){
+setCount(count+1);
+}
+function handleText(event){
+setText(event.target.value);
+}
+return(
+<div>
+<p>Count:{count}</p>
+<button onClick={handleIncrement}>Increment</button>
+<br/>
+<input type="text" value={text} onChange={handletextChange}/>
+<p>Text: {text}</p>
+</div>
+);
+}
+in this example we are managing the two state using useState: count and text.we are also defining two function : handleincrement, which update the count when a
+a button is clicked and handletextChange, which update the text state when the text input changes.
