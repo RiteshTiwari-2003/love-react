@@ -282,3 +282,17 @@ function MyComponent(props){
 
    );
 }
+
+# main difference between onClick={()=>setCategory(data.title)} and onClick={setCategory(data.title)} is when the setcategory function is failed
+in the first case, onClick={()=>setcategory(data.title)}, an arrow function is used as a callback function for the onclick event handler 
+this is means that when the element is called , the arrow function will be executed and then call the setcategory function with the data.title
+, this is useful when you need to perform some additional logic or calculation before the calling setcategory function
+
+in the second case , onClick={setcategory(data.title)}, the setcategory function is called immediately when the component is rendered ,
+and the return the value of the setcategory function is assigned to the onClick event handler.
+this is not desirable because it will call the setcategory function on every render, which can lead to unneccessary re render and performance issue.
+
+therfore the correct way to pass the function with argument to an onclick event handler is to use the first approach 
+with an arrow function , this way the setcategory function is called when the element is clicked , and not on every render.
+
+
