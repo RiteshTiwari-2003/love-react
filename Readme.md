@@ -257,4 +257,28 @@ by calling useState twice , we are creating two independent piece of state that 
 assign the current value of each stae and its corresponding setter function to seperate variable 
 
 other alternative:
+we can also manage the multiple state using a single useState hook by passing an object as the initial state and using destructuring to access individual state variable and their corresponding update function,
 
+import {useState} from "react";
+function MyComponent(props){
+   const[state,setState]=useState({
+      count:0,
+      text:''
+   });
+   function handleIncrement(){
+      setState(prevState=>{...prevState,count:prevState.count+1})
+   }
+   function handleTextChange(event){
+      setState(prevState=>({...prevState,text:event.target.value}))
+   }
+   return (
+      <div>
+      <p>Count :{state.count}</p>
+      <button onClick={handleIncrement}>increment</button>
+      <br/>
+      <input type="text" value={state.text} onChange={handleTextChange}/>
+      <p>Text:{state.text}</p>
+      </div>
+
+   );
+}
