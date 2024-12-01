@@ -253,3 +253,8 @@ return(
 }
 in this example we are managing the two state using useState: count and text.we are also defining two function : handleincrement, which update the count when a
 a button is clicked and handletextChange, which update the text state when the text input changes.
+by calling useState twice , we are creating two independent piece of state that can be managed seperatly , we are also using destructing to 
+assign the current value of each stae and its corresponding setter function to seperate variable 
+
+other alternative:
+
