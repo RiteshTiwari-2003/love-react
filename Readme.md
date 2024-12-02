@@ -295,4 +295,25 @@ this is not desirable because it will call the setcategory function on every ren
 therfore the correct way to pass the function with argument to an onclick event handler is to use the first approach 
 with an arrow function , this way the setcategory function is called when the element is clicked , and not on every render.
 
+# basic hooks which is very importent
+# basic hooks
+> useState hook
+> useEffect hook
+> useContext hook
+
+# additional hooks;
+useReducer
+>useCallback
+>useMemo
+>useRef
+> useImperativeHandle
+> useLayoutEffect
+> useId
+
+# about the useState:
+const[state,setState]=useState(initialState);
+return a statefull value and a function to update it 
+during the initial render , the returned state(state) is same as the value passed as the first argument (initialState).
+the setState function is used to update the state, it accept the new state value and enqueue  a rerender of component.
+
 
